@@ -10,11 +10,11 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo info)
-    {
-
-
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo info) {
+        menu.add("Option 1");
+        menu.add("Option 2");
     }
+    public void boolean Oncreate
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 final int subscript = index;
                 iv.setImageResource(ids[subscript]);
-                if(++index < ids.length)
+                if (++index < ids.length)
                     iv.postDelayed(this, 2000);
 
             }
